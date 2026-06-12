@@ -10,8 +10,7 @@ body{
 }
 
 /* NAV */
-
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,4 +220,90 @@ footer button{
 footer button:hover{
     background: #9450ff;
     transform: scale(1.05);
+}
+
+/* ============================================
+   BOTONES DEL HEADER (estilos movidos del HTML)
+   ============================================ */
+
+.nav-botones {
+    display: flex;
+    gap: 12px;
+}
+
+/* ============================================
+   TEMA CLARO (se activa con JavaScript)
+   ============================================ */
+
+/* Fondo y texto principal */
+body.tema-claro {
+    background: #f5f5f5;
+    color: #1a1a1a;
+}
+
+/* Navegación en modo claro */
+body.tema-claro nav a {
+    color: #1a1a1a;
+}
+
+body.tema-claro nav a:hover {
+    color: #7b2cff;
+}
+
+/* Botón del header en modo claro */
+body.tema-claro nav button {
+    color: #1a1a1a;
+    border-color: #7b2cff;
+}
+
+body.tema-claro nav button:hover {
+    background: #7b2cff;
+    color: white;
+}
+
+/* Tarjetas de proyectos en modo claro */
+body.tema-claro .card {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body.tema-claro .card p {
+    color: #666666;
+}
+
+/* Sección de herramientas en modo claro */
+body.tema-claro .herramienta {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body.tema-claro .herramienta p {
+    color: #1a1a1a;
+}
+
+/* Footer en modo claro */
+body.tema-claro footer {
+    background: #e8e8e8;
+}
+
+body.tema-claro footer p {
+    color: #555555;
+}
+
+/* Textos secundarios en modo claro */
+body.tema-claro .hero-texto p {
+    color: #555555;
+}
+
+body.tema-claro .proyectos p:first-child {
+    color: #555555;
+}
+
+body.tema-claro .herramientas p:first-child {
+    color: #555555;
+}
+
+/* Ajuste para el borde de la imagen */
+body.tema-claro .hero-imagen img {
+    border-color: #7b2cff;
 }
